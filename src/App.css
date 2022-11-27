@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: blueviolet;
+}
+.App{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://i0.wp.com/enlacelatinonc.org/wp-content/uploads/2022/04/El-Clima-hoy.jpg?fit=1200%2C676&ssl=1");
+  background-position: center;
+  background-size: cover;
+
+}
+.weatherCard{
+  background-color:rgb(233, 221, 221);
+  width: 85%;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  border-radius: 40px;
+}
+.weatherCard ul li{
+   list-style: none;
+}
+.weatherCard ul li p span{
+  color: black;
+}
+.weatherCard  section{
+  width: 90%;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+.weatherCard  section div{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+ }
+ .weatherCard  section ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+ }
+ .weatherCard  .temper{
+  width: 75%;
+  display: flex;
+  align-items: flex-start;
+  font-size: 25px;
+  color: black;
+ }
+ .weatherCard  button{
+  color: aliceblue;
+  background-color: blueviolet;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s;
+ }
+ .weatherCard  button:hover{
+  color: blueviolet;
+  background-color: aliceblue;
+  border: none;
+ }
+
+ /* reponsive clock*/
+ @media ( max-width: 300px) {
+  .weatherCard{
+    width: 70%;
+    height: 100vh;
+  }
+  .App{
+    width: 114vw;
+    height: 114vh;
+  }
+  .weatherCard  section{
+    width: 90%;
+   display: flex;
+   flex-direction: column-reverse;
+   justify-content: center;
+   align-items: center;
+  }
+  .weatherCard  .temper{
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+   }
+}
+
+/* responsive tab */
+
+@media ( min-width: 600px) {
+  .weatherCard{
+    width: 60%;
+    height: 75vh;
+  }
+  .weatherCard  .temper{
+    width: 70%;
+   }
+}
+
+ /* responsive pantalla*/
+
+@media ( min-width: 850px) {
+  .weatherCard{
+    width: 50%;
+    height: 75vh;
+  }
+  .weatherCard  .temper{
+    width: 65%;
+   }
+}
